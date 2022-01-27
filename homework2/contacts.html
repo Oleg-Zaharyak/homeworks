@@ -23,7 +23,7 @@
     <main>
         <hr>
         <h1>Напишіть нам:</h1>
-        <form action="">
+        <form action="#">
             <table>
                 <tr>
                     <td>
@@ -50,12 +50,12 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <input d type="text" placeholder="Текст">
+                                        <input type="text" placeholder="Текст">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><br>
-                                        <textarea name="Complaint" id="" cols="30" rows="10"
+                                        <textarea name="Complaint" cols="30" rows="10"
                                             placeholder="Про що ви хочете написати?"></textarea>
                                     </td>
                                 </tr>
@@ -66,14 +66,14 @@
             </table>
             <fieldset>
                 <legend>Чи задоволені ви результатом</legend>
-                <section>
+                <div>
                     <label for="choice_yes">Так</label>
                     <input id="choice_yes" type="radio" name="choice" value="choiceYes" required>
                     <label for="choice_no">Ні</label>
                     <input id="choice_no" type="radio" name="choice" value="choiceNo" required>
                     <label for="choice_maybe">Може бути</label>
                     <input id="choice_maybe" type="radio" name="choice" value="choiceMaybe" required>
-                </section>
+                </div>
             </fieldset> <br>
             <input type="submit">
         </form>
