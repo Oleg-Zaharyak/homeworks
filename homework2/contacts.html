@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+</head>
+
+<body>
+    <header>
+        <table>
+            <tr>
+                <th><img src="image/color_logo.svg" width="140" height="50" alt=""></th>
+                <th><a href="about_us.html">Abous us</a></th>
+                <th><a href="our_products.html">Our products</a></th>
+                <th><a href="contacts.html">Contacts</a></th>
+                <th><input type="search" placeholder="Search"></th>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <hr>
+        <h1>Напишіть нам:</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Пропозиції</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Текст" minlength="20">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><br>
+                                        <textarea name="Offer" cols="30" rows="10"
+                                            placeholder="Про що ви хочете написати?"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset disabled>
+                            <legend>Скарги</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input d type="text" placeholder="Текст">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><br>
+                                        <textarea name="Complaint" id="" cols="30" rows="10"
+                                            placeholder="Про що ви хочете написати?"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <fieldset>
+                <legend>Чи задоволені ви результатом</legend>
+                <section>
+                    <label for="choice_yes">Так</label>
+                    <input id="choice_yes" type="radio" name="choice" value="choiceYes" required>
+                    <label for="choice_no">Ні</label>
+                    <input id="choice_no" type="radio" name="choice" value="choiceNo" required>
+                    <label for="choice_maybe">Може бути</label>
+                    <input id="choice_maybe" type="radio" name="choice" value="choiceMaybe" required>
+                </section>
+            </fieldset> <br>
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        <br>
+        <hr>
+        <p>@ Copyringht 2022, Usoftware</p>
+    </footer>
+</body>
+
+</html>
