@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Static Template</title>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #60646c;
+            line-height: 25px;
+        }
+
+        header {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .head_text {
+            font-weight: 300;
+            color: #303236;
+            font-size: 40px;
+            letter-spacing: -1px;
+
+        }
+
+        .head2 {
+            margin: 0;
+            font-weight: 300;
+            font-size: 27px;
+            letter-spacing: -1px;
+        }
+
+        .main_container {
+            width: 24.5%;
+            text-align: center;
+            float: left;
+            margin: 0 2px;
+        }
+
+        .block_one {
+            width: 100%;
+            background-color: rgb(240, 242, 245);
+            padding: 35px 0;
+        }
+
+        .block_two {
+            width: 100%;
+            padding: 50px 10% 30px;
+        }
+
+        .price {
+            font-size: 32px;
+            font-weight: 300;
+
+        }
+
+        .price_dol {
+            font-weight: bold;
+            font-size: 40px;
+            color: #303236;
+            margin-top: 10px;
+            margin-bottom: 45px;
+            letter-spacing: -1px;
+        }
+
+        .save {
+            font-weight: 300;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .plan {
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .total_price {
+            font-size: 27px;
+            font-weight: 300;
+            margin-top: 30px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .download_button {
+            display: inline-block;
+            padding: 18px 28px;
+            text-decoration: none;
+            background-color: #ffc600;
+            color: #6d430a;
+            border-radius: 5px;
+            box-shadow: 0 -2px 0 rgb(0 0 0 / 20%) inset, 0 1px 1px rgb(0 0 0 / 20%);
+        }
+
+        .download_button:hover {
+            background-color: #ffa200;
+        }
+
+        .main_container:hover .block_one {
+            background-color: #221368;
+            color: white;
+        }
+
+        .main_container:hover .block_two {
+            background-image: url(Image/triangles.png);
+            color: white;
+        }
+
+        .main_container:hover .price_dol{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="head_text">Pricing table HTML and CSS from Psdgraphics.com</h1>
+    </header>
+    <div class="main_container">
+        <div class="block_one">
+            <h2 class="head2">Buy 1 item</h2>
+        </div>
+        <div class="block_two">
+            <h2 class="price_dol">$1.00/<span class="price">item</span></h2>
+            <p class="save">Regular price</p>
+            <p class="plan">Basic plan</p>
+            <hr />
+            <p class="total_price">Single item</p>
+        </div>
+    </div>
+    <div class="main_container">
+        <div class="block_one">
+            <h2 class="head2">Buy 2 items</h2>
+        </div>
+        <div class="block_two">
+            <p class="price_dol">$0.75/<span class="price">item</span></p>
+            <p class="save">Save 25%</p>
+            <p class="plan">Starter plan, buy this cool product and enjoy, only the best.</p>
+            <hr />
+            <p class="total_price bold">Total: $1.50</p>
+            <a href="#" class="download_button bold" title="Download">Download 2 items</a>
+        </div>
+    </div>
+    <div class="main_container">
+        <div class="block_one">
+            <h2 class="head2">Buy 4 items</h2>
+        </div>
+        <div class="block_two">
+            <p class="price_dol">$0.50/<span class="price">item</span></p>
+            <p class="save">Save 50%</p>
+            <p class="plan">Most popular plan, buy this cool product and enjoy, only the best. Simply amazing.</p>
+            <hr />
+            <p class="total_price bold">Total: $2.00</p>
+            <a href="#" class="download_button bold" title="Download">Download 4 items</a>
+        </div>
+    </div>
+    <div class="main_container">
+        <div class="block_one">
+            <h2 class="head2">Buy 10 items</h2>
+        </div>
+        <div class="block_two">
+            <p class="price_dol">$0.25/<span class="price">item</span></p>
+            <p class="save">Save 75%</p>
+            <p class="plan">Advanced plan, buy this cool product and enjoy, only the best.</p>
+            <hr />
+            <p class="total_price bold">Total: $2.50</p>
+            <a href="#" class="download_button bold" title="Download">Download 10 items</a>
+        </div>
+    </div>
+</body>
+
+</html>
