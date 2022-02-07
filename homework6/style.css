@@ -10,8 +10,8 @@ a {
   text-decoration: none;
 }
 .bg-image {
-  width: 100%;
   background-image: url(image/bg-image-1700x803.jpg);
+  background-size: 100%;
 }
 .contact-list {
   width: 100%;
@@ -80,11 +80,11 @@ a {
   letter-spacing: 2.2px;
   padding-bottom: 8px;
 }
-.nav-list-item:first-child{
-    border-bottom: 2px solid white;
+.nav-list-item:first-child {
+  border-bottom: 2px solid white;
 }
-.nav-list-item:hover{
-    border-bottom: 2px solid white;
+.nav-list-item:hover {
+  border-bottom: 2px solid white;
 }
 .nav-list-item:first-child {
   margin-left: 0;
@@ -268,8 +268,8 @@ a {
 .page-2-shadow-text {
   position: absolute;
   font-size: 200px;
-  bottom: 0;
-  right: 120px;
+  bottom: -60px;
+  right: 20px;
   font-weight: 700;
   letter-spacing: 15px;
   line-height: 1;
@@ -295,18 +295,29 @@ a {
 }
 .page-3-hr {
   position: absolute;
-  width: 100px;
+  width: 200px;
   height: 3px;
   background-color: #505cfd;
   top: 45px;
-  left: -160px;
+  left: -240px;
   border: none;
 }
 .page-3-image {
   position: absolute;
-  top: 80px;
-  right: -100px;
+  top: 0;
+  left: 827px;
   z-index: 2;
+}
+.page-3-shadow-text {
+  bottom: -185px;
+  left: 25px;
+  position: absolute;
+  font-size: 200px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0 3px 27px rgb(0 0 0 / 10%);
 }
 .page-3-name {
   font-weight: 400;
@@ -372,4 +383,55 @@ a {
   line-height: 2.15;
   letter-spacing: 0.02em;
   margin-top: 15px;
+}
+
+/* statistic block */
+
+.stats-line {
+  background-image: url(image/bg-image-2-1700x257.jpg);
+  background-size: 100%;
+}
+.stats-table {
+  padding: 80px 0 90px;
+  /* margin: 0 auto; */
+}
+.stats-block {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+.stats-item {
+  width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+.stats-number {
+  display: flex;
+  justify-content: center;
+}
+.fa-clock,
+.fa-folder,
+.fa-user-friends,
+.fa-users {
+  color: #505cfd;
+  font-size: 45px;
+}
+.stats-number-text {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.stats-text {
+  margin-top: 15px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b3bbc1;
+  font-family: "Poppins", sans-serif;
 }
