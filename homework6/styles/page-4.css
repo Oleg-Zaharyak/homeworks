@@ -1,0 +1,82 @@
+.p4-image {
+  background-image: url(../image/bg-image-3-1700x883.jpg);
+  background-size: cover;
+  padding: 80px 0 90px;
+}
+.p4-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.p4-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.p4-header-text {
+  width: 67%;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 15px;
+  text-transform: capitalize;
+  color: #888888;
+}
+.p4-price {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.p4-price-container {
+  width: 33.33333%;
+  margin: 0 15px;
+  padding: 60px 55px 70px;
+  background-color: rgb(64, 64, 68);
+  text-align: center;
+  color: white;
+}
+.p4-price-hr {
+  margin-top: 25px;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.p4-price-monthly {
+  width: 116px;
+  margin: 10px auto 0 auto;
+  border-radius: 20px;
+  padding: 3px 0;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  background-color: rgb(72, 72, 76);
+  line-height: 2.15;
+}
+.p4-price-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.p4-price-box-symbol {
+  font-size: 30px;
+  margin-right: 5px;
+  line-height: 1;
+}
+.p4-price-box-number {
+  font-size: 60px;
+  line-height: 1;
+}
+.border-button {
+  line-height: 1.25;
+  padding: 17px 35px;
+  border: 1px solid white;
+}
+.border-button:hover {
+  border: 1px solid #2c343b;
+}
+.bgcolor-blue {
+  background-color: #505cfd;
+}
+.bgcolor-lightblue {
+  background-color: #626dfd;
+}
