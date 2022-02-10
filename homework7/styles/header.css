@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+}
+.head {
+  padding-top: 30px;
+  background-color: rgb(242, 242, 242);
+}
+.head-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.head-container-up {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 26px;
+}
+.head-image {
+  display: block;
+}
+.head-search {
+  width: 50%;
+  display: flex;
+  margin-top: 10px;
+}
+.head-search-area {
+  width: 86%;
+  height: 35px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px 0 0 4px;
+  background-color: inherit;
+  line-height: 18px;
+  color: #2f2f2f;
+  padding: 0 20px;
+}
+.head-search-area:focus {
+  outline: none;
+}
+.head-search-button {
+  width: 14%;
+  height: 35px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: #fff;
+  background: #34b1da;
+  font-weight: 300;
+}
+.head-search-button:hover {
+  background: #2f2f2f;
+}
+.head-phone-number {
+  line-height: 30px;
+  font-weight: 500;
+  margin-top: 17px;
+  color: rgb(81, 79, 78);
+  text-decoration: none;
+  font-size: 21px;
+}
+.fa-phone-alt {
+  color: #34b1da;
+  margin-right: 10px;
+}
+.head-container-down {
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+.head-categories-block {
+  width: 25%;
+  height: 100%;
+  background-color: #34b1da;
+  display: flex;
+  align-items: center;
+  padding: 0 17px;
+  border-radius: 3px 3px 0 0;
+  margin-right: 30px;
+}
+.head-categories-text {
+  color: white;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.head-nav-block {
+  width: 75%;
+  height: 100%;
+  display: flex;
+}
+.head-nav-wrapper {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(70, 70, 70);
+  border-radius: 3px 0 0 0;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+.head-nav-item {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+.head-nav-item:last-child {
+  margin-right: 0;
+}
+.fa-home,
+.fa-star,
+.fa-user-lock,
+.fa-user,
+.fa-check-square {
+  font-size: 14px;
+  color: #34b1da;
+}
+.head-nav-text {
+  text-transform: capitalize;
+  color: white;
+  margin-left: 10px;
+}
+.head-nav-text:hover {
+  color: #34b1da;
+}
+.active-link {
+  color: #34b1da;
+}
+.head-trashed-block {
+  width: 20%;
+  height: 100%;
+  background-color: #34b1da;
+  border-radius: 0 3px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head-trashed-wrapper {
+  display: flex;
+  align-items: center;
+  color: #9de4fb;
+  cursor: pointer;
+}
+.fa-cart-plus {
+  font-size: 22px;
+  margin-right: 12px;
+}
+.head-trashed-text {
+  font-weight: 300;
+}
+.fa-chevron-down {
+  margin-left: 20px;
+}
