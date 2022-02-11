@@ -1,0 +1,47 @@
+.stats-line {
+  background-image: url(../image/bg-image-2-1700x257.jpg);
+  background-size: 100%;
+}
+.stats-table {
+  padding: 80px 0 90px;
+}
+.stats-block {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+.stats-item {
+  width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+.stats-number {
+  display: flex;
+  justify-content: center;
+}
+.fa-clock,
+.fa-folder,
+.fa-user-friends,
+.fa-users {
+  color: #505cfd;
+  font-size: 45px;
+}
+.stats-number-text {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.stats-text {
+  margin-top: 15px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b3bbc1;
+  font-family: "Poppins", sans-serif;
+}
