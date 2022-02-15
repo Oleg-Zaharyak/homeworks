@@ -3,8 +3,9 @@
   background: #464646;
 }
 .footer-wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .footer-up-block {
   width: 100%;
@@ -24,6 +25,7 @@
   color: white;
 }
 .footer-up-text {
+  display: block;
   font-size: 12px;
   font-weight: 300;
   line-height: 27px;
@@ -34,7 +36,7 @@
 }
 .footer-down-block {
   width: 100%;
-  padding: 12px 0 31px;
+  padding: 12px 10px 31px;
 }
 .footer-down-wrapper {
   width: 100%;
