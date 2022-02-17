@@ -1,16 +1,16 @@
-@media screen and (max-width: 992px) {
-  .head {
-    padding-top: 25px;
+@media screen and (max-width: 1200px) {
+  .main-container {
+    max-width: 940px;
+    grid-template-rows: 345px 180px 45px auto auto;
+  }
+  .grid-second-line {
+    min-width: 283.333px;
   }
   .head-wrapper {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 940px;
   }
-  .head-image {
-    display: block;
-    width: 25%;
-    height: 40px;
+  .footer-wrapper {
+    max-width: 940px;
   }
   .head-search-area {
     width: 75%;
@@ -18,9 +18,33 @@
   .head-search-button {
     width: 25%;
   }
+  .head-nav-item {
+    margin-right: 18px;
+  }
+  .head-phone-number {
+    width: 25%;
+    display: flex;
+    justify-content: end;
+  }
+  .fa-chevron-down {
+    margin-left: 9px;
+  }
+}
+/* ----------------- 992------------------------------------ */
+@media screen and (max-width: 992px) {
+  .head {
+    padding-top: 25px;
+  }
+  .head-wrapper {
+    max-width: 750px;
+  }
+  .head-image {
+    display: block;
+    width: 25%;
+    height: 40px;
+  }
   .head-phone-number {
     font-size: 18px;
-    width: 25%;
   }
   .head-container-up {
     gap: 30px;
@@ -50,16 +74,16 @@
     display: block;
     font-size: 24px;
   }
-  .head-nav-icon:hover{
-      color: white;
-      transition: 0.3s all ease;
+  .head-nav-icon:hover {
+    color: white;
+    transition: 0.3s all ease;
   }
   .head-icon-title-1:hover ~ .head-title-1,
   .head-icon-title-2:hover ~ .head-title-2,
   .head-icon-title-3:hover ~ .head-title-3,
   .head-icon-title-4:hover ~ .head-title-4,
-  .head-icon-title-5:hover ~ .head-title-5{
-      display: block;
+  .head-icon-title-5:hover ~ .head-title-5 {
+    display: block;
   }
   .head-trashed-block {
     width: 30%;
@@ -70,7 +94,6 @@
   /* ----------main ------------------------- */
   .main-container {
     max-width: 750px;
-    padding: 0 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 345px 442px 442px 442px 45px auto;
@@ -80,7 +103,7 @@
       "block3 block3 "
       "block4 block4 "
       "line line "
-      "block5 block6 "
+      "block5 block5 "
       "block8 block8 ";
   }
   .grid-block7 {
@@ -90,16 +113,62 @@
     margin-left: 30px;
     width: 34%;
   }
-  .grid-block1-header{
-      font-size: 25px;
+  .grid-block1-header {
+    font-size: 25px;
   }
   .grid-block2-wrapper {
     margin-top: 50px;
     margin-left: 10px;
   }
+  .grid-second-line {
+    min-width: 345px;
+  }
   /* ---------------footer------------------ */
   .footer-wrapper {
     max-width: 750px;
-    padding: 0 15px;
+  }
+}
+/* -------------------------  */
+@media screen and (max-width: 767px) {
+  .main-container {
+    width: 100%;
+    /* grid-template-rows: 345px 180px 45px auto auto; */
+  }
+  .grid-second-line {
+    min-width: 100%;
+  }
+  .footer-up-block {
+    justify-content: space-between;
+  }
+  .head-container-down {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    width: 100%;
+    height: 56px;
+
+    background-color: rgb(70, 70, 70);
+    position: relative;
+  }
+  .mibile-nav-item {
+    width: 100%;
+    height: 56px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+  }
+  .mobile-icon {
+    color: #2f2f2f;
+    font-size: 22px;
+    z-index: 5;
+    transition: 0.3s all ease;
+  }
+  .mobile-icon:hover {
+    color: #34b1da;
   }
 }

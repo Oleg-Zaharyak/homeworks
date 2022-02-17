@@ -11,12 +11,15 @@ body {
   font-size: 14px;
   line-height: 1.43;
 }
+.mobile-nav {
+  display: none;
+}
 .head {
   padding-top: 30px;
   background-color: rgb(242, 242, 242);
 }
 .head-wrapper {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -121,7 +124,7 @@ body {
 .head-title-2,
 .head-title-3,
 .head-title-4,
-.head-title-5{
+.head-title-5 {
   display: none;
   position: absolute;
   top: -35px;
@@ -140,7 +143,7 @@ body {
 .head-nav-item:last-child {
   margin-right: 0;
 }
-.head-nav-icon{
+.head-nav-icon {
   font-size: 14px;
   color: #34b1da;
 }

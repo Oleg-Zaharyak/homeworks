@@ -1,8 +1,9 @@
 .main-wrapper {
   padding: 30px 0;
+  position: relative;
 }
 .main-container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
   display: grid;
   padding: 0 15px;
@@ -12,7 +13,7 @@
     "block1 block1 block1"
     "block2 block3 block4"
     "line line line"
-    "block5 block6 block7"
+    "block5 block5 block5"
     "block8 block8 block8";
   column-gap: 30px;
   row-gap: 30px;
@@ -93,7 +94,7 @@
   color: inherit;
   transition: 0.3s all ease;
 }
-.grid-block2-link:hover{
+.grid-block2-link:hover {
   color: #34b1da;
 }
 .grid-block4 > .grid-block2-wrapper > .grid-block2-bold-text {
@@ -114,9 +115,16 @@
 }
 /* -------------second line block----------- */
 .grid-second-line {
-  border: 1px solid #ededed;
-  padding: 0 20px 40px;
+  min-width: 360px;
+  height: 100%;
+  scroll-snap-align: start;
+  padding: 0 16px 40px;
   position: relative;
+  margin-right: 30px;
+  border: 1px solid #ededed;
+}
+.grid-second-line:last-child {
+  margin-right: 0;
 }
 .grid-second-line-image {
   width: 100%;
@@ -124,6 +132,7 @@
   justify-content: center;
   margin: 70px 0;
 }
+
 .grid-second-line-block {
   padding-top: 15px;
 }
@@ -175,7 +184,7 @@
   color: #2f2f2f;
   transition: 0.3s all ease;
 }
-.second-line-block-name:hover{
+.second-line-block-name:hover {
   color: #34b1da;
 }
 .second-line-block-description {
@@ -216,12 +225,18 @@
   left: 20px;
   bottom: 22px;
   display: flex;
+  transform: scale(-1, 1);
 }
 .star-icon {
   font-size: 9px;
-  color: #34b1da;
+  color: #cccccc;
   margin-left: 5px;
 }
+.star-icon:hover,
+.star-icon:hover ~ .star-icon {
+  color: #34b1da;
+}
+
 /* ----------------  title icon second line produckt -------------------- */
 .second-line-block-icon {
   position: relative;
@@ -300,13 +315,35 @@
   transition: all 0.3s ease;
 }
 .grid-block5 {
+  position: relative;
   grid-area: block5;
+  padding: 20px 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
-.grid-block6 {
-  grid-area: block6;
+.grid-block5::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
 }
-.grid-block7 {
-  grid-area: block7;
+.grid-block5::-webkit-scrollbar-thumb {
+  background-color: #34b1da;
+  border-radius: 10px;
+  padding: 10px 0;
+  border: 5px solid #ededed;
+}
+.grid-block5::-webkit-scrollbar-track {
+  background-color: #ededed;
+  border-radius: 10px;
+}
+.grid-block5::-webkit-scrollbar-button:single-button {
+  background-color: #34b1da;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  border: 4px solid #ededed;
 }
 .grid-block8-href-image {
   grid-area: block8;
