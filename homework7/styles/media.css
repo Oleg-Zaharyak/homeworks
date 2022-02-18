@@ -132,7 +132,22 @@
 @media screen and (max-width: 767px) {
   .main-container {
     width: 100%;
-    /* grid-template-rows: 345px 180px 45px auto auto; */
+    grid-template-columns: 100%;
+    grid-template-rows: 60vw 50vw 50vw 50vw 45px auto;
+    grid-template-areas:
+      "block1"
+      "block2"
+      "block3"
+      "block4"
+      "line"
+      "block5"
+      "block8";
+  }
+  .grid-block1{
+    height: 60vw;
+  }
+  .grid-first-line{
+    height: 50vw;
   }
   .grid-second-line {
     min-width: 100%;
