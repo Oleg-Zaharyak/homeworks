@@ -282,4 +282,9 @@
   .grid-block1-info {
     width: 60%;
   }
+  .footer-up-block{
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 20px;
+  }
 }
