@@ -20,9 +20,33 @@
 
   <body>
     <nav class="mobile-nav">
-      <div class="mibile-nav-item">
-        <i class="fas fa-cart-plus mobile-icon"></i>
-        <i class="fas fa-cog mobile-icon"></i>
+      <div class="mobile-nav-item">
+        <input id="mobile-nav-checkbox" type="checkbox">
+        <label class="mobile-nav-label mobile-nav-label1" for="mobile-nav-checkbox"><i class="fas fa-cog mobile-icon"></i></label>
+          <ul class="mobile-nav-menu">
+            <li><a class=" mobile-nav-menu-href" href="#">
+              <i class="fas fa-home mobile-nav-menu-icon"></i>
+              <span class="mobile-nav-menu-text">home</span>
+            </a></li>
+            <li><a class=" mobile-nav-menu-href" href="#">
+              <i class="fas fa-star mobile-nav-menu-icon"></i>
+              <span class="mobile-nav-menu-text">wish list (0)</span>
+            </a></li>
+            <li><a class=" mobile-nav-menu-href" href="#">
+              <i class="fas fa-user-lock mobile-nav-menu-icon"></i>
+              <span class="mobile-nav-menu-text">my account</span>
+            </a></li>
+            <li><a class=" mobile-nav-menu-href" href="#">
+              <i class="fas fa-user mobile-nav-menu-icon"></i>
+              <span class="mobile-nav-menu-text">log in</span>
+            </a></li>
+            <li><a class=" mobile-nav-menu-href" href="#">
+              <i class="fas fa-check-square mobile-nav-menu-icon"></i>
+              <span class="mobile-nav-menu-text">checkout</span>
+            </a></li>
+          </ul>
+        </a>
+        <a class="mobile-nav-href" href="#"><i class="fas fa-cart-plus mobile-icon"></i></a>
       </div>
     </nav>
     <header class="head">
@@ -35,7 +59,10 @@
           />
           <div class="head-search">
             <input class="head-search-area" type="search" />
-            <button class="head-search-button" type="button">Search</button>
+            <button class="head-search-button " type="button">
+             <span class="head-search-button-text">Search</span> 
+             <span class="head-search-button-icon"><i class="fas fa-search"></i></span>
+            </button>
           </div>
           <a class="head-phone-number" href="tel:+3800-2345-6789">
             <i class="fas fa-phone-alt"></i>

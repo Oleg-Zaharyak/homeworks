@@ -6,6 +6,9 @@
 a {
   text-decoration: none;
 }
+ul{
+  list-style-type: none;
+}
 body {
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
@@ -14,6 +17,7 @@ body {
 .mobile-nav {
   display: none;
 }
+
 .head {
   padding-top: 30px;
   background-color: rgb(242, 242, 242);
@@ -50,6 +54,7 @@ body {
   outline: none;
 }
 .head-search-button {
+  display: block;
   width: 14%;
   height: 35px;
   border: none;
@@ -59,6 +64,9 @@ body {
   font-weight: 300;
   transition: 0.3s all ease;
   cursor: pointer;
+}
+.head-search-button-icon{
+  display: none;
 }
 .head-search-button:hover {
   background: #2f2f2f;

@@ -116,10 +116,6 @@
   .grid-block1-header {
     font-size: 25px;
   }
-  .grid-block2-wrapper {
-    margin-top: 50px;
-    margin-left: 10px;
-  }
   .grid-second-line {
     min-width: 345px;
   }
@@ -130,6 +126,41 @@
 }
 /* -------------------------  */
 @media screen and (max-width: 767px) {
+  .head-container-up {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "head-up-left head-up-right "
+      "head-down head-down";
+  }
+  .head-image {
+    width: 209px;
+    height: auto;
+    grid-area: head-up-left;
+    padding: 0 10px;
+  }
+  .head-phone-number {
+    width: 100%;
+    grid-area: head-up-right;
+  }
+  .head-search {
+    width: 100%;
+    grid-area: head-down;
+  }
+  .head-search-button-text {
+    display: none;
+  }
+  .head-search-button-icon {
+    display: inline-block;
+  }
+  .head-search-area {
+    width: 85%;
+  }
+  .head-search-button {
+    width: 15%;
+  }
   .main-container {
     width: 100%;
     grid-template-columns: 100%;
@@ -143,10 +174,10 @@
       "block5"
       "block8";
   }
-  .grid-block1{
+  .grid-block1 {
     height: 60vw;
   }
-  .grid-first-line{
+  .grid-first-line {
     height: 50vw;
   }
   .grid-second-line {
@@ -166,7 +197,7 @@
     background-color: rgb(70, 70, 70);
     position: relative;
   }
-  .mibile-nav-item {
+  .mobile-nav-item {
     width: 100%;
     height: 56px;
     padding: 0 20px;
@@ -177,13 +208,78 @@
     top: 0;
     z-index: 5;
   }
+  #mobile-nav-checkbox{
+    display: none;
+  }
+  .mobile-nav-lable {
+    z-index: 5;
+    position: relative;
+
+  }
+  .mobile-nav-menu {
+    width: 180px;
+    background-color: #ebeaea;
+    position: absolute;
+    top: 56px;
+    right: 25px;
+    padding: 5px 15px 10px;
+    display: none;
+  }
+  .mobile-nav-menu-href{
+    color: #2f2f2f;
+    transition: 0.3s all ease;
+  }
+  #mobile-nav-checkbox:checked ~ .mobile-nav-menu{
+    display: block;
+  }
+  .mobile-nav-menu-href:hover{
+    color: #34b1da;
+  }
+  .mobile-nav-menu-icon{
+    font-size: 14px;
+    margin-right: 7px;
+  }
+  .mobile-nav-menu-text{
+    line-height: 27px;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
   .mobile-icon {
+    cursor: pointer;
     color: #2f2f2f;
     font-size: 22px;
     z-index: 5;
     transition: 0.3s all ease;
   }
+  .mobile-icon:first-child{
+    margin-right: 10px;
+  }
   .mobile-icon:hover {
     color: #34b1da;
+  }
+}
+@media screen and (max-width: 430px) {
+  .head-container-up {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 15px;
+    grid-template-areas:
+      "head-up-left"
+      "head-up-right "
+      "head-down";
+  }
+  .head-phone-number {
+    justify-content: start;
+    margin: 0;
+  }
+  .head-image {
+    padding: 0 0 15px;
+  }
+  .head-search {
+    margin-top: 0;
+  }
+  .grid-block1-info {
+    width: 60%;
   }
 }
